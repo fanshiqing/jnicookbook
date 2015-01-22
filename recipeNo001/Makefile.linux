@@ -3,7 +3,7 @@ all: test
 test: compilejava compilec
 
 compilec:
-	cc -g -shared -fpic -I$(JAVA_HOME)/include/ -I$(JAVA_HOME)/include/darwin c/recipeNo001_HelloWorld.c -o lib/libHelloWorld.dylib	
+	cc -g -shared -fpic -I${JAVA_HOME}/include -I${JAVA_HOME}/include/linux c/recipeNo001_HelloWorld.c -o lib/libHelloWorld.so
 
 compilejava:
 	$(JAVA_HOME)/bin/javac -d target java/recipeNo001/HelloWorld.java
