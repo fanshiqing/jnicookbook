@@ -1,6 +1,4 @@
-all: test
-
-test: compilejava compilec
+all: compilejava compilec
 
 compilec:
 	cc -g -shared -fpic -I$(JAVA_HOME)/include/ -I$(JAVA_HOME)/include/darwin c/recipeNo001_HelloWorld.c -o lib/libHelloWorld.dylib	
