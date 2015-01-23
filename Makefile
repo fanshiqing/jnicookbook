@@ -5,5 +5,8 @@ RECIPES = recipeNo001
 all:
 	$(MAKE) -C $(RECIPES)
 
+test:
+	$(MAKE) -C $(RECIPES) test
+
 clean:
 	$(MAKE) -C $(RECIPES) clean
