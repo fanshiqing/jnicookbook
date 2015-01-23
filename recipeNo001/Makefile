@@ -1,9 +1,4 @@
-ARCH=$(shell uname -s | tr '[:upper:]' '[:lower:]')
-ifeq ($(ARCH),darwin)
-  EXT=dylib
-else
-  EXT=so
-endif
+include ../Makefile.common
 
 all: compilejava compilec
 
