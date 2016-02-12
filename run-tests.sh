@@ -1,4 +1,5 @@
 #/usr/bin/env sh
 
-make
+make all
 make test
+make clean
